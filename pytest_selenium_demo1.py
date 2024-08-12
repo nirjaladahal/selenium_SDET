@@ -1,9 +1,7 @@
 import pytest
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.common.by import By
-from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.options import Options
 import time
 
@@ -12,7 +10,7 @@ import time
 def driver():
     options = Options()
     options.add_experimental_option("detach", True)
-    driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=options)
+    driver = webdriver.Chrome(options=options)
     driver.maximize_window()
     driver.implicitly_wait(10)
     yield driver
