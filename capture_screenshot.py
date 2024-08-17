@@ -9,4 +9,4 @@ driver.get("https://trytestingthis.netlify.app/")
 
 # driver.save_screenshot(r"E:\User\Pictures\screenshot\homepage.png")
 
-driver.get_screenshot_as_file(r"E:\User\Pictures\screenshot\homepage1.png")
+driver.get_screenshot_as_file(r"E:\User\Pictures\screenshot\feature1.png")
